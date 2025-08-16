@@ -79,9 +79,9 @@ body {
   font-style: italic;
 }
 
-.star-icon {
-  font-size: 30px;
-  color: yellow;
+.fa-star {
   vertical-align: middle;
+  font-size: 32px;
+  color: rgb(255, 2, 2);
   cursor: pointer;
 }
