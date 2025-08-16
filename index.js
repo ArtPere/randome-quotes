@@ -12,9 +12,10 @@ const favoritesContainer = document.getElementById("favorites-container");
 let currentQuoteIndex = null;
 console.log(currentQuoteIndex);
 function generateRandomQuote() {
-  currentQuoteIndex = Math.floor(Math.random() * quotes.length);
-  const currentQuotes = quotes[currentQuoteIndex];
-  const { text, author } = currentQuotes;
+  const randomIndex = generateRandomInt(quotes.length);
+
+  const { text, author } = quotes[randomIndex];
+  currentQuoteIndex = randomIndex;
   quoteElement.textContent = text;
   authorElement.textContent = author;
   console.log(currentQuoteIndex);
